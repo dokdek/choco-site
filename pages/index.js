@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
     <Navbar/>
-    <div className="lessons-div flex flex-col md:flex-row justify-center items-center space-y-3 md:space-x-3 md:space-y-0 my-10">
+    <div className="lessons-div flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-x-3 md:space-x-32 sm:space-y-0 mt-20">
     <ReviewCard/>
     <LessonCard/>
     </div>
