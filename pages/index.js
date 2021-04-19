@@ -5,7 +5,7 @@ import LessonCard from "../components/lesson-card";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-gray-800 h-screen">
     <Navbar/>
     <div className="lessons-div flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-x-3 md:space-x-32 sm:space-y-0 mt-20">
     <ReviewCard/>

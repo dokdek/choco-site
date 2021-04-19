@@ -13,7 +13,7 @@ export default function Navbar() {
   function setActiveTab(tab) {}
 
   return (
-    <nav class="bg-gray-800">
+    <nav class="bg-gray-700">
       <div class="mx-2">
         <div class="relative flex items-center justify-between h-14">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
