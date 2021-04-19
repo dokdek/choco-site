@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Particles from "react-particles-js";
-import particlesconfig from "../particles-config"
+import particlesconfig from "../particles-config";
+
 
 export default function Login() {
   return (
