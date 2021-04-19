@@ -62,7 +62,7 @@ export default{
         }
       }
     },
-    "fpsLimit": 30,
+    "fpsLimit": 60,
     "interactivity": {
       "detect_on": "canvas",
       "events": {
