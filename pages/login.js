@@ -54,7 +54,7 @@ export default function Login() {
             ></input>
           </div>
           <div class="flex items-center justify-between">
-            <button className="bg-pink-500 rounded px-5"type="button">Sign In</button>
+            <button className="bg-pink-500 rounded px-5 hover:bg-pink-400"type="button">Sign In</button>
           </div>
         </div>
       </div>
