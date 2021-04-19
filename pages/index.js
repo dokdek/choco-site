@@ -3,8 +3,16 @@ import Navbar from "../components/navbar";
 import ReviewCard from "../components/review-card";
 import LessonCard from "../components/lesson-card";
 import ProgressCard from "../components/progress-card";
+import KanjiMiniCard from "../components/kanji-mini-card";
 
 export default function Home() {
+  function testPrint(obj) {
+    let result = [];
+    for (let i = 0; i < 30; i++) {
+      result.push(obj);
+    }
+    return result;
+  }
   return (
     <div className="bg-gray-800 h-screen">
       <Navbar />
@@ -13,7 +21,13 @@ export default function Home() {
           <ReviewCard />
           <LessonCard />
         </div>
-        <ProgressCard/>
+        <ProgressCard />
+        <div className="flex justify-start w-3/4 sm:w-1/2 mb-2">
+          <h2 className="font-bold text-white">Kanji</h2>
+        </div>
+        <div className="mini-kanji-container flex flex-wrap flex-row justify-start w-3/4 sm:w-1/2">
+          {testPrint(<KanjiMiniCard />)}
+        </div>
       </div>
     </div>
   );
