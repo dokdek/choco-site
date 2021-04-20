@@ -1,7 +1,8 @@
 //import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navlink from "./navbar-link";
 import MobileNavlink from "./mobile-navlink";
+import Link from "next/link";
 
 export default function Navbar() {
   const [toggleMobile, setToggleMobile] = useState(true);
@@ -53,32 +54,35 @@ export default function Navbar() {
             </button>
           </div>
           <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-            <h1 className="pt-1 text-pink-400 font-bold">Choco</h1>
+            <Link href="/">
+            <a className="pt-1 text-pink-400 font-bold hover:text-pink-300">Choco</a>
+            </Link>
             <div class="hidden sm:block sm:ml-6">
               <div class="flex space-x-4">
-                <Navlink isActive={false} name={"Dashboard"} link={"#"} />
-                <Navlink isActive={false} name={"Kanji"} link={"#"} />
-                <Navlink isActive={false} name={"Vocabulary"} link={"#"} />
-                <Navlink isActive={false} name={"Levels"} link={"#"} />
+                <Navlink isActive={false} name={"Dashboard"} link={"/"} />
+                <Navlink isActive={false} name={"Kanji"} link={"/kanji"} />
+                <Navlink isActive={false} name={"Vocabulary"} link={"/vocabulary"} />
+                <Navlink isActive={false} name={"Levels"} link={"/"} />
               </div>
             </div>
             <div class="absolute right-0 flex items-center pr-2">
+              <Link href="/login">
               <a
-                href="#"
                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 Logout
               </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
       <div class="sm:hidden" id="mobile-menu" hidden={toggleMobile}>
         <div class="px-2 pt-2 pb-3 space-y-1">
-          <MobileNavlink isActive={false} name={"Dashboard"} link={"#"} />
-          <MobileNavlink isActive={false} name={"Kanji"} link={"#"} />
-          <MobileNavlink isActive={false} name={"Vocabulary"} link={"#"} />
-          <MobileNavlink isActive={false} name={"Levels"} link={"#"} />
+          <MobileNavlink isActive={false} name={"Dashboard"} link={"/"} />
+          <MobileNavlink isActive={false} name={"Kanji"} link={"/kanji"} />
+          <MobileNavlink isActive={false} name={"Vocabulary"} link={"/vocabulary"} />
+          <MobileNavlink isActive={false} name={"Levels"} link={"/"} />
         </div>
       </div>
     </nav>
