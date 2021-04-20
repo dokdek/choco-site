@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Particles from "react-particles-js";
 import particlesconfig from "../particles-config";
+import Link from "next/Link";
 
 
 export default function Login() {
@@ -54,7 +55,9 @@ export default function Login() {
             ></input>
           </div>
           <div class="flex items-center justify-between">
-            <button className="bg-pink-500 rounded px-5 hover:bg-pink-400"type="button">Sign In</button>
+            <Link href="/">
+            <a className="bg-pink-500 rounded px-5 hover:bg-pink-400 text-white">Sign In</a>
+            </Link>
           </div>
         </div>
       </div>
