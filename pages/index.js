@@ -5,6 +5,7 @@ import LessonCard from "../components/lesson-card";
 import ProgressCard from "../components/progress-card";
 import KanjiMiniCard from "../components/kanji-mini-card";
 import VocabMiniCard from "../components/vocab-mini-card";
+import Link from "next/link";
 
 export default function Home() {
   function testPrint(obj) {
