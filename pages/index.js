@@ -4,6 +4,7 @@ import ReviewCard from "../components/review-card";
 import LessonCard from "../components/lesson-card";
 import ProgressCard from "../components/progress-card";
 import KanjiMiniCard from "../components/kanji-mini-card";
+import VocabMiniCard from "../components/vocab-mini-card";
 
 export default function Home() {
   function testPrint(obj) {
@@ -14,10 +15,10 @@ export default function Home() {
     return result;
   }
   return (
-    <div className="bg-gray-800 h-screen">
+    <div className="bg-gray-800 min-h-screen">
       <Navbar />
       <div className="main-container flex flex-col justify-center items-center">
-        <div className="lessons-div flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-x-3 md:space-x-32 sm:space-y-0 mt-20">
+        <div className="lessons-div flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-x-3 lg:space-x-32 sm:space-y-0 mt-20">
           <ReviewCard />
           <LessonCard />
         </div>
@@ -27,6 +28,12 @@ export default function Home() {
         </div>
         <div className="mini-kanji-container flex flex-wrap flex-row justify-start w-3/4 sm:w-1/2">
           {testPrint(<KanjiMiniCard />)}
+        </div>
+        <div className="flex justify-start w-3/4 sm:w-1/2 my-2">
+          <h2 className="font-bold text-white">Vocabulary</h2>
+        </div>
+        <div className="mini-kanji-container flex flex-wrap flex-row justify-start w-3/4 sm:w-1/2">
+          {testPrint(<VocabMiniCard />)}
         </div>
       </div>
     </div>
