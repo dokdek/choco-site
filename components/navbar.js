@@ -62,7 +62,9 @@ export default function Navbar() {
                 <Navlink isActive={false} name={"Dashboard"} link={"/"} />
                 <Navlink isActive={false} name={"Kanji"} link={"/kanji"} />
                 <Navlink isActive={false} name={"Vocabulary"} link={"/vocabulary"} />
-                <Navlink isActive={false} name={"Levels"} link={"/"} />
+                {
+                //<Navlink isActive={false} name={"Levels"} link={"/"} />
+              }
               </div>
             </div>
             <div class="absolute right-0 flex items-center pr-2">
@@ -82,7 +84,9 @@ export default function Navbar() {
           <MobileNavlink isActive={false} name={"Dashboard"} link={"/"} />
           <MobileNavlink isActive={false} name={"Kanji"} link={"/kanji"} />
           <MobileNavlink isActive={false} name={"Vocabulary"} link={"/vocabulary"} />
-          <MobileNavlink isActive={false} name={"Levels"} link={"/"} />
+          {
+            //<MobileNavlink isActive={false} name={"Levels"} link={"/"} />
+          }
         </div>
       </div>
     </nav>
