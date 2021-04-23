@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Particles from "react-particles-js";
 import particlesconfig from "../particles-config";
-import Link from "next/Link";
+import Link from "next/link";
 
 
 export default function Login() {
