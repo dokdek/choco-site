@@ -27,13 +27,13 @@ export default function Home() {
         <div className="flex justify-start w-3/4 sm:w-1/2 mb-2">
           <h2 className="font-bold text-white">Kanji</h2>
         </div>
-        <div className="mini-kanji-container flex flex-wrap flex-row justify-start w-3/4 sm:w-1/2">
+        <div className="mini-kanji-container flex flex-wrap flex-row justify-center w-3/4 sm:w-1/2">
           {testPrint(<KanjiMiniCard />)}
         </div>
         <div className="flex justify-start w-3/4 sm:w-1/2 my-2">
           <h2 className="font-bold text-white">Vocabulary</h2>
         </div>
-        <div className="mini-kanji-container flex flex-wrap flex-row justify-start w-3/4 sm:w-1/2">
+        <div className="mini-kanji-container flex flex-wrap flex-row justify-center w-3/4 sm:w-1/2">
           {testPrint(<VocabMiniCard />)}
         </div>
       </div>

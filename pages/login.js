@@ -20,7 +20,7 @@ export default function Login() {
       </Head>
       <div className="md:mb:10 z-10">
         <h1 className="text-center md:text-left text-8xl text-pink-400">Choco</h1>
-        <h6 className="text-center md:text-left  text-s text-pink-200">
+        <h6 className="mx-3 text-center md:text-left  text-s text-pink-200">
           Let's learn Japanese! Choco is a modified Wanikani clone
         </h6>
       </div>
